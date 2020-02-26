@@ -3,7 +3,7 @@ import { add, initBody } from "@bospieter/ws-helper";
 
 initBody("promise example");
 
-add.li("log 1");
+add.li("log first");
 
 const p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -13,4 +13,4 @@ const p1 = new Promise((resolve, reject) => {
 
 p1.then(message => add.li("Promise done" + message));
 
-add.li("log 3");
+add.li("log last");
